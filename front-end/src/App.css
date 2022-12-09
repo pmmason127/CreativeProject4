@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  font-family: garamond;
+  
+}
+
+#root {
+  display: flex;
+  justify-content: space-around;
+  background-color: #472202;
+}
+
+.App {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color: #6DE8F6;
+  height: 100vh;
+  height: 100%;
+}
+
+.pageHeader {
+  width: 60%;
+  background-color: #E4E4E4;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 20px;
+  border-style: solid;
+  border-color: black;
+  font-family: garamond;
+}
+
+.pageDescHead {
+  text-align: center;
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.pageDesc {
+  text-align: center;
+  font-size: 24px;
+}
+
+.wishlist {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: #E4E4E4;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.people {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: #E4E4E4;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: black;
+}
+
+.formHeader, .gamesHeader, .personHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.formWishlist, .personForm {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.inputField{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.gameInfo, .game, .person,.personInfo {
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.game, .person {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  font-size: 18px;
+  border: 2px solid black;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  margin:5px;
+}
+
+.gameInfo, .personInfo {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.infoItemPerson {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 25%;
+  margin-bottom: 3px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.infoItemGame {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 20%;
+  margin-bottom: 5px;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.updateBlock {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
+.updateInfo {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column-reverse;
+  width: 33%;
+  text-align: center;
+}
+
+.info{
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.submitButton {
+  border-radius: 5px;
+}
+
+.pageHeader {
+  text-align: left;
+  border-bottom: 3px solid black;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 24px;
+}
+
+@media only screen and (max-width: 420px) {
+  .wishlist,.people {
+    width: 100%;
+  }
+  
+  .inputFieldGame, .submitGame {
+    width: 33%;
+  }
+  
+  .inputFieldPerson {
+    width: 22.5%;
+  }
+  
+  .formWishlist, .personForm {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .game, .person{
+    width: 100%;
+    margin:0;
+  }
+  
+  .infoItemGame {
+    width: 30%;
+    border: 0;
+  }
+  
+
+}
+
+@media only screen and (min-width: 961px) {
+  .wishlist,.people {
+    width: 49%;
+  }
+  
+  .wishlist {
+    border-right: 3px solid black;
+  }
+  
+  .inputFieldGame {
+    width: 20%;
+    text-align: center;
+  }
+  
+  .submitButton {
+    width: 100%;
+    font-size: 24px;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin: auto;
+    height: 50px;
+    width: 40%;
+  }
+  
+  .inputFieldPerson {
+    width: 25%;
+    text-align: center;
+  }
+  
+  .formWishlist, .personForm {
+    width: 100%;
+    height: 180px;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .game,.person{
+    width: 95%;
+  }
+}
